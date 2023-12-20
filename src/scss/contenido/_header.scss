@@ -2,6 +2,7 @@
 @use '../base/mixins' as m;
 
 @include m.ajuste_listas;
+@include m.ajuste_imagenes(imagen);
 
 header{
     padding: 1%;
@@ -14,9 +15,8 @@ h1, h2{
     color: v.$rosa;
 }
 
-.logo{
-    height: 5rem;
-    width: 5rem;
+.logo {
+    @include m.ajuste_imagenes(logo);
 }
 
 ul{

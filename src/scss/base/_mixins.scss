@@ -6,20 +6,38 @@
     padding: 1%;
 }
 
-@mixin ajuste_listas{
-    li{
+@mixin ajuste_listas {
+    li {
         list-style: none;
-        &:hover{
+
+        &:hover {
             background-color: v.$blanco;
         }
-    
-    } 
 
-    li a{
+    }
+
+    li a {
         text-decoration: none;
-        &:hover{
+
+        &:hover {
             color: v.$rosa;
             font-weight: bold;
         }
     }
+}
+
+@mixin ajuste_imagenes($tipo) {
+    @if $tipo =='logo' {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    @else if $tipo=='imagen' {
+        img {
+            height: 4rem;
+            width: 6rem !important;
+        }
+
+    }
+
 }
