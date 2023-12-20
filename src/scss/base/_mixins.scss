@@ -1,0 +1,25 @@
+@use '../base/variables' as v;
+
+@mixin alinear {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+@mixin ajuste_listas{
+    li{
+        list-style: none;
+        &:hover{
+            background-color: v.$blanco;
+        }
+    
+    } 
+
+    li a{
+        text-decoration: none;
+        &:hover{
+            color: v.$rosa;
+            font-weight: bold;
+        }
+    }
+}

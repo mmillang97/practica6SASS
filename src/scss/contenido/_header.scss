@@ -1,0 +1,32 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+@include m.ajuste_listas;
+
+header{
+    padding: 1%;
+    @media (width <= 768px){
+       text-align: center;
+    }
+}
+
+h1, h2{
+    color: v.$rosa;
+}
+
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+ul{
+    @include m.alinear;
+    background-color: v.$rosa_claro;
+
+    @media (width <= 768px){
+        flex-direction: column;
+        align-items: center;
+    }
+   
+   
+}

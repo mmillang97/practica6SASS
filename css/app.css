@@ -1,0 +1,47 @@
+li {
+  list-style: none;
+}
+li:hover {
+  background-color: white;
+}
+
+li a {
+  text-decoration: none;
+}
+li a:hover {
+  color: #cf649a;
+  font-weight: bold;
+}
+
+header {
+  padding: 1%;
+}
+@media (width <= 768px) {
+  header {
+    text-align: center;
+  }
+}
+
+h1, h2 {
+  color: #cf649a;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: #fde1eb;
+}
+@media (width <= 768px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
