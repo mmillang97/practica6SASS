@@ -1,0 +1,21 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+//Redes sociales
+@include m.colores_contenedor(facebook);
+@include m.colores_contenedor(linkedin);
+@include m.colores_contenedor(instagram);
+@include m.colores_contenedor(youtube);
+@include m.colores_contenedor(pinterest);
+@include m.colores_contenedor(twitter);
+
+.div_contenedor{
+    border:v.$borde;
+    .row{
+        @include m.ajuste_contenedor;
+        
+    }
+}
+
+//Paleta de colores
+@include m.div_color;

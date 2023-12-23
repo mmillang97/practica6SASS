@@ -34,10 +34,57 @@
 
     @else if $tipo=='imagen' {
         img {
-            height: 4rem;
-            width: 6rem !important;
+            height: 6rem;
+            width: 8rem !important;
+
+            @media (width<=768px){
+                height: auto;
+                width: 33.33% !important;
+            }
         }
-
     }
+}
 
+@mixin ajuste_contenedor{
+    align-items: center;
+    height: auto;
+    margin: 0;
+    min-height: 14rem;
+}
+
+@mixin colores_contenedor($red){
+    @if $red == 'facebook'{
+        .facebook{
+            background-color: v.$verdeagua;
+        }
+    }@else if $red == 'linkedin'{
+        .linkedin{
+            background-color: v.$azul;
+        }
+    }@else if $red == 'instagram'{
+        .instagram{
+            background-color: v.$morado;
+        }
+    }@else if $red == 'pinterest'{
+        .pinterest{
+            background-color: v.$naranja;
+        }
+    }@else if $red == 'youtube'{
+        .youtube{
+            background-color: v.$rojo;
+        }
+    }@else if $red == 'twitter'{
+        .twitter{
+            background-color: v.$gris;
+        }
+    }
+}
+
+@mixin div_color{
+    .box_color{
+        height: 4rem;
+        width: auto;
+        background-color: red;
+        margin-top: 1%;
+    }
 }
